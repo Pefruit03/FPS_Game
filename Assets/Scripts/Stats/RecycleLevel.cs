@@ -16,7 +16,14 @@ public class RecycleLevel : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(1);
+            if (GlobalComplete.nextFloor == 5)
+            {
+                SceneManager.LoadScene(1);
+            }
+            else
+            {
+                SceneManager.LoadScene(GlobalComplete.nextFloor);
+            }
         }
     }
 

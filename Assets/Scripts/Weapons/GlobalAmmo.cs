@@ -7,6 +7,12 @@ public class GlobalAmmo : MonoBehaviour
 {
     public static int pistolAmmo;
     public GameObject ammoDisplay;
+    public static int currentAmmo;
+
+    void Start()
+    {
+        currentAmmo = pistolAmmo;
+    }
 
     // Update is called once per frame
     void Update()
